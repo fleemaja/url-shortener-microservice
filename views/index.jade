@@ -1,0 +1,36 @@
+html
+    head
+      meta(charset="UTF-8")
+      link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css")
+
+    body(style = "padding: 20px;")
+      div(class="container-fluid")
+      
+        if (err)
+            div
+                h2(style = "color: red;")= err
+      
+        h1(class="header")
+          | URL Shortener Microservice
+        blockquote
+          p User stories:
+          ul
+            li I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.</ul>
+            li When I visit that shortened URL, it will redirect me to my original link.</ul>
+        h3 Example creation usage:
+        code.
+            https://url-shortener-microservice-fleemaja.c9users.io/new/https://www.google.com
+        br
+        code.
+            https://url-shortener-microservice-fleemaja.c9users.io/new/http://foo.com:80
+        h3 Example creation output
+        code.
+          {
+            "original_url":"http://foo.com:80",
+            "short_url":"https://url-shortener-microservice-fleemaja.c9users.io/8170"
+          }
+        h3 Usage:
+        code https://url-shortener-microservice-fleemaja.c9users.io/2871
+        h3 Will redirect to:
+        code.
+            https://www.google.com/

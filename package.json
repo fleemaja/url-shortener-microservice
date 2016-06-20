@@ -1,0 +1,13 @@
+{
+  "name": "url-shortener-microservice",
+  "version": "0.0.0",
+  "description": "",
+  "main": "server.js",
+  "repository": "",
+  "author": "",
+  "dependencies": {
+    "express": "^4.13.3",
+    "jade": "^1.11.0",
+    "mongodb": "^2.1.4"
+  }
+}
