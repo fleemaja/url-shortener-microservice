@@ -4,7 +4,7 @@ var app = express();
 
 var path = process.cwd();
 var port = process.env.PORT || 3500;
-var appURL = 'https://url-shortener-microservice-fleemaja.c9users.io/';
+var appURL = 'https://radiant-spire-93686.herokuapp.com/';
 
 mongo.MongoClient.connect(process.env.MONGOLAB_URI || 'mongodb://localhost:27017/url-shortener-microservice', function(err, db) {
 
